@@ -7,6 +7,7 @@ import businessTheme from "@flame-ui/themes/business"; */
 import Landing from "./components/Landing";
 import Pricing from "./components/Pricing";
 
+// Dummy change
 export default () => {
   return (
     <div>
