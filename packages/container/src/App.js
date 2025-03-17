@@ -1,7 +1,6 @@
 import React from "react";
 import CryptosApp from "./components/CryptosApp";
 
-// Dummy change
 const App = () => {
   return (
     <div>
