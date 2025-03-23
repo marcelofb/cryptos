@@ -15,7 +15,7 @@ const prodConfig = {
     new ModuleFederationPlugin({
       name: "container",
       remotes: {
-        cryptos: `cryptos@${domain}/cryptos/remoteEntry.js`,
+        cryptos: `cryptos@${domain}/cryptos/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
