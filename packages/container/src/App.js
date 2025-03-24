@@ -1,13 +1,16 @@
 import React from "react";
 import CryptosApp from "./components/CryptosApp";
+import Header from "./components/Header";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <h1>Container!</h1>
-      <hr />
-      <CryptosApp />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+        <CryptosApp />
+      </div>
+    </BrowserRouter>
   );
 };
 
