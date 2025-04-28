@@ -1,14 +1,16 @@
-import faker from "faker";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
 const mount = (el) => {
-  const walletText = `<div>You have ${faker.random.number()} cryptos in your wallet</div>`;
-  el.innerHTML = walletText;
+  ReactDOM.render(<App />, el);
 };
 
 if (process.env.NODE_ENV === "development") {
-  const el = document.getElementById("dev-wallet");
-  if (el) {
-    mount(el);
+  const devRoot = document.getElementById("_wallet-dev-root");
+  if (devRoot) {
+    mount(devRoot);
   }
 }
+
 export { mount };
